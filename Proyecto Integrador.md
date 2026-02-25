@@ -158,3 +158,7 @@ def generar_escenario():
 
 generar_escenario() 
 ```
+https://github.com/user-attachments/assets/8d43b07c-d40a-4278-b3e6-2b3db16e8170
+
+
+
