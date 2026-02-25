@@ -100,10 +100,10 @@ La Matemática detrás de la Generación Fractal
 
 En la graficación por computadora, los fractales no se dibujan a mano; se calculan. Se generan mediante algoritmos computacionales basados en la iteración o recursividad, es decir, tomando una fórmula matemática y alimentando el resultado de vuelta en la misma ecuación miles de veces.
 
-<img src="/assets/1.3.png" alt="Un paisaje de montaña" width="250" height="250">
+<img src="/assets/1.3.png" alt="Un paisaje de montaña" width="350" height="350">
 El ejemplo más famoso es el Conjunto de Mandelbrot, el cual se define en el plano de los números complejos mediante la siguiente relación de recurrencia:
 
-<img src="/assets/form 1.3.png" alt="Un paisaje de montaña" width="100" height="100">
+<img src="/assets/form 1.3.png" alt="Un paisaje de montaña" width="180" height="180">
 
 
 La computadora calcula esta ecuación para cada píxel de la pantalla, asignando colores dependiendo de qué tan rápido el resultado de la ecuación tiende al infinito.Aplicaciones de los Fractales en la GraficaciónLa incorporación de la geometría fractal revolucionó el diseño asistido y la industria del entretenimiento, inaugurando lo que se conoce como generación procedimental.
