@@ -261,3 +261,10 @@ Operaciones Geométricas e InterpolaciónOcurren cuando necesitamos alterar la c
 
 Para solucionar esto, la computadora usa métodos de interpolación:Vecino más cercano (Nearest Neighbor): El método más rápido pero de menor calidad. Simplemente duplica o elimina píxeles. Genera bordes muy dentados.Interpolación Bilineal: Calcula el color del nuevo píxel promediando matemáticamente los 4 píxeles originales más cercanos.
 Suaviza los bordes dentados, pero puede hacer que la imagen se vea un poco borrosa.Interpolación Bicúbica: Es el estándar en programas como Photoshop. Analiza los 16 píxeles circundantes y utiliza curvas matemáticas complejas para adivinar con gran precisión el color exacto que debería tener el nuevo píxel, manteniendo la nitidez de la imagen al cambiar su tamaño.
+
+## Bibliografías
+
+* **Instituto Tecnológico de Piedras Negras.** (s.f.). *Unidad I: Introducción a la Graficación por Computadora*. [Ver PDF](http://itpn.mx/recursosisc/6semestre/graficacion/Unidad%20I.pdf)
+* **Proyecto Descartes.** (s.f.). *Graficación por Computadora: Materiales didácticos*. [Ver sitio](https://proyectodescartes.org/iCartesiLibri/materiales_didacticos/GraficacionComputadora/index.html?page=12)
+* **Sandoval, P.** (2017). *Unidad 1: Introducción a la graficación*. [Ver Blog](https://sandovalpandha.blogspot.com/p/unidad-1_17.html)
+* **Graficación TMMJC.** (2019). *Modelos de color RGB, CMY, HSV y HSL*. [Ver Blog](https://graficaciontmmjc.blogspot.com/2019/03/modelos-de-color-rgb-cmy-hsv-y-hsl.html)
