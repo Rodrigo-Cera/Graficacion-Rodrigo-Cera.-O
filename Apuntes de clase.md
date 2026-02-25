@@ -114,28 +114,28 @@ bpy.ops.object.delete()
 
 # 2. Definición de Materiales (Modelos de Color RGB)
 def crear_material(nombre, r, g, b):
-    # Creamos un nuevo material en la base de datos de Blender [cite: 130]
+    # Creamos un nuevo material en la base de datos de Blender 
     mat = bpy.data.materials.new(name=nombre)
-    # Definimos el color difuso usando el modelo RGBA [cite: 132]
+    # Definimos el color difuso usando el modelo RGBA 
     mat.diffuse_color = (r, g, b, 1.0)
     return mat
 
 # Definimos los colores para nuestro escenario
 mat_base = crear_material("GrisOscuro", 0.1, 0.1, 0.1)
-mat_acento = crear_material("Neon", 0.0, 0.8, 1.0) # Un azul cian [cite: 136]
+mat_acento = crear_material("Neon", 0.0, 0.8, 1.0) # Un azul cian 
 
 # 3. Parámetros del Escenario
-largo = 10  # Cantidad de bloques [cite: 140]
+largo = 10  # Cantidad de bloques
 ancho_pasillo = 3 # Distancia desde el centro
 
 # 4. Construcción Procedural con Ciclos (Transformaciones)
 for i in range(largo):
     # --- Pared Izquierda ---
-    # Traslación: colocamos el cubo en x=-3, y=i*2, z=1 [cite: 144]
+    # Traslación: colocamos el cubo en x=-3, y=i*2, z=1 
     bpy.ops.mesh.primitive_cube_add(location=(-ancho_pasillo, i * 2, 1))
     bloque_izq = bpy.context.active_object
     
-    # Lógica de color: alternar materiales según el índice (Tema 4.1) 
+    # Lógica de color: alternar materiales según el índice  
     if i % 2 == 0:
         bloque_izq.data.materials.append(mat_base)
     else:
@@ -149,19 +149,18 @@ for i in range(largo):
     bloque_der.data.materials.append(mat_base)
 
 # 5. Suelo (Escalamiento y Posicionamiento)
-# Creamos un plano y lo escalamos para cubrir todo el pasillo [cite: 162]
+# Creamos un plano y lo escalamos para cubrir todo el pasillo 
 bpy.ops.mesh.primitive_plane_add(location=(0, largo - 1, 0))
 suelo = bpy.context.active_object
 suelo.scale.x = 4 [cite: 165]
 suelo.scale.y = largo + 2 [cite: 166]
 
 # 6. Iluminación Básica (Tema 4.2)
-# Agregamos una luz de tipo "Point" para iluminar el recorrido [cite: 170]
+# Agregamos una luz de tipo "Point" para iluminar el recorrido 
 bpy.ops.object.light_add(type='POINT', location=(0, largo, 5))
 luz = bpy.context.active_object
-luz.data.energy = 1000 # Intensidad de la luz [cite: 173]
-
-print("Escenario generado exitosamente.")
+luz.data.energy = 1000 # Intensidad de la luz 
 ```
 Al presionar run scripting, nos generará el siguiente escenario en la vista de Blender 
+
 ![Mi Gráfico](./assets/Escenario.png)
