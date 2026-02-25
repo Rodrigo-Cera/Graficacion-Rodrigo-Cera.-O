@@ -103,7 +103,6 @@ Para evitar la redundancia de código y fomentar el paradigma de programación f
 Traslación: Se utiliza para posicionar los elementos en el espacio euclidiano. La posición de cada bloque se calcula dinámicamente en función del índice de iteración para generar una estructura simétrica.
 Escalamiento: Se aplica de forma condicional para introducir variabilidad visual en el eje Z, alterando la altura de los polígonos según la lógica de control del script.
 
-Implementación del Algoritmo
 A continuación se presenta el código que resuelve la construcción del escenario:
 ```
 import bpy
