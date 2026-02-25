@@ -1,6 +1,6 @@
 # Unidad I. Introducción a la graficación por computadora
 ### 1.1. Historia y evolución de la graficación por computadora
-Introducción
+
 El uso adecuado y provechoso de la tecnología ha transformado a la computadora en un dispositivo extremadamente poderoso para producir imágenes de forma rápida, económica y con un nivel de detalle sin precedentes. Actualmente, la graficación por computadora es una disciplina transversal; es decir, es posible aplicarla en prácticamente todas las áreas del conocimiento con objetivos específicos. 
 
 <img src="/assets/1.1.jpeg" alt="Un paisaje de montaña" width="350" height="350">
