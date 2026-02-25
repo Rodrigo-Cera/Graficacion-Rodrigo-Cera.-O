@@ -46,9 +46,10 @@ crear_poligono_2d("Poligono2D", lados=6, radio=5)
 ![Mi Gráfico](./assets/hexago.png)
 
 # Práctica 1: Geometría Generativa con Python en Blender
-### Esta práctica demuestra cómo utilizar la programación para crear geometría compleja basada en patrones matemáticos. En este caso, desarrollamos la figura de la "Flor de la Vida" automatizando la creación de círculos periféricos alrededor de un origen.+2🧠 La Base MatemáticaPara posicionar los círculos, no utilizamos coordenadas cartesianas ($X, Y$) directamente, sino coordenadas polares ($r, \theta$). 
-### Para que Blender pueda procesarlas, el script realiza la siguiente conversión:+1$x = r \cdot \cos(\theta)$ $y = r \cdot \sin(\theta)$ Donde $r$ es el radio y $\theta$ es el ángulo en radianes. Como el círculo completo tiene 360°, utilizamos math.radians() para convertir los grados a un formato que Python pueda interpretar.
-### Este código incluye la configuración del entorno, la creación del círculo central y el ciclo while solicitado.
+### Esta práctica demuestra cómo utilizar la programación para crear geometría compleja basada en patrones matemáticos. En este caso, desarrollamos la figura de la "Flor de la Vida" automatizando la creación de círculos periféricos alrededor de un origen. 
+### La Base MatemáticaPara posicionar los círculos, no utilizamos coordenadas cartesianas x, y  directamente, sino coordenadas polares (sen,cos y angulo). 
+### Para que Blender pueda procesarlas, el script realiza la siguiente conversión: x = r * cos(angulo), y = r * sen(angulo). Donde r es el radio y lo de dentro de parentésis es el ángulo en radianes. Como el círculo completo tiene 360°, utilizamos math.radians() para convertir los grados a un formato que Python pueda interpretar.
+### El siguiente código incluye la configuración del entorno, la creación del círculo central y el ciclo while solicitado.
 ```
 import bpy
 import math
@@ -84,4 +85,4 @@ while angulo_actual < 360:
 print("Patrón generado exitosamente.")
 ```
 ## Una vez escrito el codigo en blender pasamos a darle a run script, con esto nos generará la siguiente figura("Flor de vida").
-![Mi Gráfico](./assets/flor.png)
+![Mi Gráfico](./assets/Flor.png)
