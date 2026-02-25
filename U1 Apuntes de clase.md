@@ -249,6 +249,9 @@ Ventajas/Desventajas: Es el único formato que almacena el estado de edición co
 
 En graficación por computadora, un mapa de bits (también conocido como imagen raster o rasterizada) es una estructura de datos que representa una rejilla rectangular de píxeles o puntos de color, que se puede visualizar en un monitor, papel u otro dispositivo de representación.A diferencia de los gráficos vectoriales (que usan fórmulas matemáticas para trazar líneas y formas escalables al infinito), un mapa de bits está anclado a una resolución específica. 
 
+<img src="/assets/bits.jpg" alt="Un paisaje de montaña" width="350" height="350">
+
+
 Si intentamos ampliar un mapa de bits más allá de su tamaño original, la computadora se ve obligada a inventar información que no existe, lo que resulta en el temido efecto de "pixelado" (los bloques de color se vuelven visibles).¿Qué es el Procesamiento de Mapas de Bits?El procesamiento consiste en aplicar algoritmos matemáticos a la matriz de píxeles para alterar la imagen original. 
 Puesto que cada píxel tiene un valor numérico (basado en los modelos de color que vimos en el punto 1.4), procesar la imagen significa recalcular estos números.Las operaciones de procesamiento se dividen en tres grandes categorías técnicas:1. Operaciones Puntuales (Transformaciones de Píxel)Son las modificaciones más básicas. 
 
