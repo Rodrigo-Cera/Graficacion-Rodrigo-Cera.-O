@@ -84,3 +84,27 @@ Procesamiento Digital de Imágenes: Técnicas para filtrar, mejorar, restaurar o
 Realidad Virtual (VR): Aísla al usuario del mundo físico para sumergirlo en un entorno 3D generado por computadora. Utiliza cascos estereoscópicos (HMDs), audio espacial y controladores de movimiento para engañar a los sentidos y crear una fuerte sensación de "presencia" en el mundo digital.
 
 Realidad Aumentada (AR):  A diferencia de la VR, no aísla al usuario, sino que superpone (aumenta) información gráfica tridimensional generada por computadora sobre el mundo físico en tiempo real, utilizando dispositivos como gafas especiales o la cámara de un smartphone (como en filtros de redes sociales o aplicaciones de navegación).
+
+## 1.3. Aspectos matemáticos de la graficación: Geometría FractalIntroducción a las bases matemáticasLa graficación por computadora se fundamenta profundamente en las matemáticas. 
+Mientras que la geometría euclidiana y el álgebra lineal (mediante el uso de matrices y vectores) nos permiten representar y transformar formas regulares artificiales (como cubos, esferas o polígonos), estas herramientas resultan insuficientes para modelar la caótica complejidad del mundo real.
+
+Para renderizar montañas, nubes, costas o la ramificación de los árboles, la graficación recurre a un área fascinante: la geometría fractal.¿Qué es un Fractal?Un fractal es un objeto geométrico cuya estructura básica, fragmentada o aparentemente irregular, se repite a diferentes escalas. 
+A diferencia de las figuras geométricas tradicionales, los fractales inauguran un nuevo paradigma matemático que no distingue entre el conjunto matemático puro y el objeto natural, permitiendo a las computadoras simular formas orgánicas con una simetría compleja y desconcertante.
+
+Propiedades Fundamentales de los Fractales
+
+Para que un objeto generado por computadora sea considerado un fractal, debe cumplir con ciertas propiedades matemáticas:Autosimilitud: Es su característica más distintiva. Significa que el todo es exacta o aproximadamente similar a una de sus partes. Si hacemos un acercamiento (zoom) a un fractal, volveremos a ver la figura original repitiéndose una y otra vez de forma infinita. Esta autosimilitud puede ser exacta, cuasi-autosimilar o estadística (como en la naturaleza).Complejidad y detalle infinito: Tienen un número infinito de vértices o iteraciones. 
+No importa cuánto nos acerquemos, la figura nunca pierde su nivel de detalle ni se reduce a una simple línea recta o curva euclidiana.Dimensión fractal (fraccionaria): A diferencia de un punto (dimensión 0), una línea (dimensión 1) o un plano (dimensión 2), los fractales ocupan un espacio intermedio. Su dimensión matemática es una fracción, lo que explica cómo una curva fractal puede arrugarse tanto que casi llena un plano bidimensional entero sin llegar a serlo.
+
+La Matemática detrás de la Generación Fractal
+
+En la graficación por computadora, los fractales no se dibujan a mano; se calculan. Se generan mediante algoritmos computacionales basados en la iteración o recursividad, es decir, tomando una fórmula matemática y alimentando el resultado de vuelta en la misma ecuación miles de veces.
+<img src="/assets/1.3.png" alt="Un paisaje de montaña" width="500" height="300">
+El ejemplo más famoso es el Conjunto de Mandelbrot, el cual se define en el plano de los números complejos mediante la siguiente relación de recurrencia:
+<img src="/assets/form 1.3.png" alt="Un paisaje de montaña" width="250" height="250">
+
+
+La computadora calcula esta ecuación para cada píxel de la pantalla, asignando colores dependiendo de qué tan rápido el resultado de la ecuación tiende al infinito.Aplicaciones de los Fractales en la GraficaciónLa incorporación de la geometría fractal revolucionó el diseño asistido y la industria del entretenimiento, inaugurando lo que se conoce como generación procedimental.
+Sus aplicaciones incluyen:Generación de Terrenos y Paisajes: Utilizando algoritmos como el "desplazamiento de punto medio" o el ruido de Perlin (fractales estadísticos), los motores gráficos pueden generar montañas, valles y cordilleras realistas sin necesidad de que un artista modele cada roca.
+
+Sistemas-L (Sistemas de Lindenmayer): Son gramáticas matemáticas recursivas utilizadas específicamente para simular el crecimiento de plantas, árboles y vasos sanguíneos de manera fotorrealista.Modelado de Fenómenos Naturales: Permite la creación visual de nubes, fuego, humo, galaxias y la simulación de texturas complejas (como la rugosidad de una corteza o la porosidad de una piedra).Compresión de Imágenes: Existen algoritmos de compresión fractal que buscan patrones autosimilares dentro de una fotografía para reducir drásticamente el tamaño del archivo de imagen sin perder demasiada calidad.
